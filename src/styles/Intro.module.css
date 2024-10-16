@@ -1,0 +1,43 @@
+.screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; /* Fondo claro */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    opacity: 1;
+    animation: fadeOut 5s forwards;
+  }
+  
+  .name {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #333;
+    animation: fadeIn 2s ease-out forwards;
+  }
+  
+  /* Efecto de aparición */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Efecto de desaparición */
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
