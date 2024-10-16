@@ -1,22 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Intro from './components/Intro';
+import React, { useState, useEffect } from 'react'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Intro from './components/Intro'
 
 const App: React.FC = () => {
-  const [showIntro, setShowIntro] = useState(true);
+  const [showIntro, setShowIntro] = useState(true)
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowIntro(false);
-    }, 5000);
-
-    return () => clearTimeout(timer);
-  }, []);
+    setShowIntro(true)
+  }, [])
 
   return (
     <div className="app">
-     {showIntro && <Intro />}
+      {showIntro && <Intro setShowIntro={setShowIntro} />}
       {!showIntro && (
         <>
           <Header />
@@ -27,7 +23,7 @@ const App: React.FC = () => {
         </>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
