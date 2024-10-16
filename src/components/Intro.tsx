@@ -19,6 +19,13 @@ const Intro: React.FC = () => {
   return (
     <div className={styles.screen}>
       <h1 className={styles.name}>Osián</h1>
+      <audio autoPlay loop>
+        <source
+          src="https://res.cloudinary.com/dg4q5s1fc/video/upload/v1729074644/Medicine_Cloud_llxqaz.mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
     </div>
   );
 };
