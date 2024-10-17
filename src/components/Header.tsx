@@ -1,14 +1,15 @@
 import React from 'react';
+import styles from '/src/styles/Header.module.css'
 
 const Header: React.FC = () => {
   return (
-    <header>
+    <header className={styles.header}>
       <h1>Personal Web</h1>
-      <nav>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
+      <nav className={styles.nav}>
+        <a href="">Home</a>
+        <a href="">Projects</a>
+        <a href="">Pictures</a>
+        <a href="">Contact</a>
       </nav>
       
       {/* <h2 className={styles.role}>Musician</h2>
