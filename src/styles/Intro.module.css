@@ -15,6 +15,45 @@
   opacity: 1;
 }
 
+.pictures {
+  display: flex; 
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+
+.img {
+  margin-inline: 1rem;
+  width: 100%;
+  height: 100%;
+  animation: fadeIn3 3s ease-out forwards;
+  opacity: 0; 
+}
+
+@keyframes fadeIn3 {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.img:nth-child(1) {
+  animation-delay: 0s;
+}
+.img:nth-child(2) {
+  animation-delay: 1s;
+}
+.img:nth-child(3) {
+  animation-delay: 2s;
+}
+.img:nth-child(4) {
+  animation-delay: 3s;
+}
+.img:nth-child(5) {
+  animation-delay: 4s;
+}
+
 .name {
   margin-bottom: 1rem;
   margin-top: 0;

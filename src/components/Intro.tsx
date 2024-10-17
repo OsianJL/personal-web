@@ -12,7 +12,13 @@ const Intro: React.FC<IntroProps> = ({ setShowIntro }) => {
 
   return (
     <div className={styles.screen}>
-      <div className={styles.pictures}></div>
+      <div className={styles.pictures}>
+        <img className={styles.img} src="https://picsum.photos/id/237/200/150" alt="" />
+        <img className={styles.img} src="https://picsum.photos/id/237/200/150" alt="" />
+        <img className={styles.img} src="https://picsum.photos/id/237/200/150" alt="" />
+        <img className={styles.img} src="https://picsum.photos/id/237/200/150" alt="" />
+        <img className={styles.img} src="https://picsum.photos/id/237/200/150" alt="" />
+      </div>
       <h1 className={styles.name}>Osián Jorge Lezcano</h1>
       <h2 className={styles.role}>Software Developer</h2>
       <button className={styles.button} onClick={handleClick}>
