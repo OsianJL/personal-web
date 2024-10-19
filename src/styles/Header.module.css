@@ -1,10 +1,6 @@
-
-  
-
-  .header {
+.header {
     text-align: center;
-    margin: 0;
-    padding: 20px; 
+    margin: 0; 
     position: sticky;
     top: 0;
     left: 0; 
@@ -14,15 +10,30 @@
     z-index: 10;
   }
 
-  
-
-
   @keyframes enhance-header {
     to {
         background-color: rgb(102, 238, 238, .4);
+        padding: 20px; 
         backdrop-filter: blur(20px);
         font-size: 18px;
         color: black
     }
     
+}
+
+/* .header a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  animation: enhance-anchor 0.3s ease both;
+}
+
+@keyframes enhance-anchor {
+  to {
+    color: black; 
+  }
+} */
+
+.nav {
+  display: flex; 
+  justify-content: space-around;
 }

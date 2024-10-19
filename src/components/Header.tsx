@@ -5,10 +5,11 @@ const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-      <h1>Personal Web</h1>
         <a href="">Home</a>
+        <a href="">About Me</a>
+        <a href="">Skills</a>
         <a href="">Projects</a>
-        <a href="">Pictures</a>
+        <a href="">Experience</a>
         <a href="">Contact</a>
       </nav>
       

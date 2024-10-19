@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Intro from './components/Intro'
 import Projects from './components/Projects'
+import Hero from './components/Hero'
 
 const App: React.FC = () => {
   const [showIntro, setShowIntro] = useState(true)
@@ -17,7 +18,7 @@ const App: React.FC = () => {
       {!showIntro && (
         <>
           <Header/>
-          <Projects />
+          <Hero />
           <Projects />
           <Projects />
           <Projects />
