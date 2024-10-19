@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Intro from './components/Intro'
-import Projects from './components/AboutMe'
+import AboutMe from './components/AboutMe'
 import Hero from './components/Hero'
 
 const App: React.FC = () => {
@@ -17,11 +17,13 @@ const App: React.FC = () => {
       {showIntro && <Intro setShowIntro={setShowIntro} />}
       {!showIntro && (
         <>
-          <Header/>
-          <Hero />
-          <Projects />
-          <Projects />
-          <Projects />
+          <section id="header">
+            <Header />
+          </section>
+            <Hero />
+          <section id="about">
+            <AboutMe />
+          </section>
           <Footer />
         </>
       )}
