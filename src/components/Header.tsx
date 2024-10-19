@@ -4,12 +4,12 @@ import styles from '/src/styles/Header.module.css'
 const Header: React.FC = () => {
   return (
     <nav className={styles.header}>
-      <a href="">Home</a>
-      <a href="">About Me</a>
-      <a href="">Skills</a>
-      <a href="">Projects</a>
-      <a href="">Experience</a>
-      <a href="">Contact</a>
+      <a className={styles.anchor} href="#">Home</a>
+      <a className={styles.anchor} href="#">About Me</a>
+      <a className={styles.anchor} href="#">Skills</a>
+      <a className={styles.anchor} href="#">Projects</a>
+      <a className={styles.anchor} href="#">Experience</a>
+      <a className={styles.anchor} href="#">Contact</a>
     </nav>
   )
 }

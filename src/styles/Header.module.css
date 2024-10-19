@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  padding: 10px;
   justify-content: space-around;
   text-align: center;
   margin: 0;
@@ -10,17 +11,47 @@
   animation-timeline: scroll(root block);
   animation-range: 0 100px;
   z-index: 10;
-  color: #6EE; 
 }
 
 @keyframes enhance-header {
   to {
     background-color: rgb(102, 238, 238, 0.4);
-    backdrop-filter: blur(20px);
-    font-size: 18px;
-    color: #E69; 
+    padding: 20px;
+    backdrop-filter: blur(50px);
+    font-size: 25px;
+    font-weight: 500;
   }
 }
 
+
+.anchor {
+  font-size: 1rem; 
+  animation: color-anchor linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 200px;
+}
+
+.anchor:hover {
+  color: #6EE;
+  animation: hover-color linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 200px; 
+}
+
+@keyframes hover-color {
+  to {
+    color: #E69; 
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes color-anchor {
+
+  to{
+    font-size: 1.5rem; 
+    color: black; 
+  }
+  
+}
 
 
