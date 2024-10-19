@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
         <h1 className={styles.title}>Hi! This is Osián</h1>
         <img className={styles.img} src="/src/assets/Osian_Avatar.png" alt="Picture of Osian" />
         <p className={styles.subtitle}>Web Developer | Digital Expert | Musician</p>
-        <a href="#projects" className={styles.cta}>Projects</a>
+        <a href="https://github.com/OsianJL" target='_blank' className={styles.cta}>GitHub</a>
       </div>
     </section>
   );
