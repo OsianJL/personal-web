@@ -23,7 +23,7 @@
 
 .img {
   margin-inline: 1rem;
-  width: 100%;
+  width: 5rem; 
   height: 100%;
   animation: fadeIn3 3s ease-out forwards;
   opacity: 0; 
