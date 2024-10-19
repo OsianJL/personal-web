@@ -1,14 +1,28 @@
-.nav {
-    background-color: #993737;
-    color: #fff;
-  }
+
   
 
-.header {
-    background-color: antiquewhite;
-    opacity: transparent;
-    color: #6EE; 
-    display: flex;
-    
+  .header {
+    text-align: center;
+    margin: 0;
+    padding: 20px; 
+    position: sticky;
+    top: 0;
+    left: 0; 
+    animation: enhance-header linear both;
+    animation-timeline: scroll(root block); 
+    animation-range: 0 100px; 
+    z-index: 10;
+  }
 
+  
+
+
+  @keyframes enhance-header {
+    to {
+        background-color: rgb(102, 238, 238, .4);
+        backdrop-filter: blur(20px);
+        font-size: 18px;
+        color: black
+    }
+    
 }

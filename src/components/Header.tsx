@@ -4,8 +4,8 @@ import styles from '/src/styles/Header.module.css'
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
-      <h1>Personal Web</h1>
       <nav className={styles.nav}>
+      <h1>Personal Web</h1>
         <a href="">Home</a>
         <a href="">Projects</a>
         <a href="">Pictures</a>
