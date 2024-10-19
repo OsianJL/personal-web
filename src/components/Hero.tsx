@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from '/src/styles/Hero.module.css';
+import CodeAnimation from './CodeAnimation';
 
 const Hero: React.FC = () => {
   return (
     <section className={styles.hero}>
+      <CodeAnimation />
       <div className={styles.overlay}>
         <h1 className={styles.title}>Hi! This is Osián</h1>
         <img className={styles.img} src="/src/assets/Osian_Avatar.png" alt="Picture of Osian" />
