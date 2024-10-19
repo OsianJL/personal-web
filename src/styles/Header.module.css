@@ -1,39 +1,26 @@
 .header {
-    text-align: center;
-    margin: 0; 
-    position: sticky;
-    top: 0;
-    left: 0; 
-    animation: enhance-header linear both;
-    animation-timeline: scroll(root block); 
-    animation-range: 0 100px; 
-    z-index: 10;
-  }
-
-  @keyframes enhance-header {
-    to {
-        background-color: rgb(102, 238, 238, .4);
-        padding: 20px; 
-        backdrop-filter: blur(20px);
-        font-size: 18px;
-        color: black
-    }
-    
-}
-
-/* .header a {
-  text-decoration: none;
-  transition: color 0.3s ease;
-  animation: enhance-anchor 0.3s ease both;
-}
-
-@keyframes enhance-anchor {
-  to {
-    color: black; 
-  }
-} */
-
-.nav {
-  display: flex; 
+  display: flex;
   justify-content: space-around;
+  text-align: center;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  animation: enhance-header linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 100px;
+  z-index: 10;
+  color: #6EE; 
 }
+
+@keyframes enhance-header {
+  to {
+    background-color: rgb(102, 238, 238, 0.4);
+    backdrop-filter: blur(20px);
+    font-size: 18px;
+    color: #E69; 
+  }
+}
+
+
+
