@@ -5,6 +5,7 @@ import Intro from './components/Intro'
 import AboutMe from './components/AboutMe'
 import Hero from './components/Hero'
 import Skills from './components/Skills'
+import Projects from './components/Projects'
 
 const App: React.FC = () => {
   const [showIntro, setShowIntro] = useState(true)
@@ -27,6 +28,9 @@ const App: React.FC = () => {
           </section>
           <section id="skills">
             <Skills />
+          </section>
+          <section id="projects">
+            <Projects />
           </section>
           <Footer />
         </>

@@ -8,7 +8,7 @@ const Header: React.FC = () => {
       <a href='#' className={styles.link} >Home</a>
       <Link smooth={true} duration={500} className={styles.link} to="about">About Me</Link>
       <Link smooth={true} duration={500} className={styles.link} to="skills">Skills</Link>
-      <Link smooth={true} duration={500} className={styles.link} to="">Projects</Link>
+      <Link smooth={true} duration={500} className={styles.link} to="projects">Projects</Link>
       <Link smooth={true} duration={500} className={styles.link} to="">Experience</Link>
       <Link smooth={true} duration={500} className={styles.link} to="">Contact</Link>
     </nav>

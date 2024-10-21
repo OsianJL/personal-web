@@ -8,23 +8,27 @@ const Skills: React.FC = () => {
         <h2 className={styles.skillsHeading}>Technologies & Tools</h2>
         <div className={styles.skillsGrid}>
           <div className={styles.skillItem}>
-            <img src="/src/assets/logos/react.svg" alt="React" className={styles.skillLogo} />
+            <img src="../src/assets/logos_tech_stack/react_logo.svg" alt="React" className={styles.skillLogo} />
             <span>React</span>
           </div>
           <div className={styles.skillItem}>
-            <img src="/src/assets/logos/typescript.svg" alt="TypeScript" className={styles.skillLogo} />
+            <img src="../src/assets/logos_tech_stack/react_logo.svg" alt="TypeScript" className={styles.skillLogo} />
             <span>TypeScript</span>
           </div>
           <div className={styles.skillItem}>
-            <img src="/src/assets/logos/nodejs.svg" alt="Node.js" className={styles.skillLogo} />
+            <img src="../src/assets/logos_tech_stack/react_logo.svg" alt="Node.js" className={styles.skillLogo} />
             <span>Node.js</span>
           </div>
           <div className={styles.skillItem}>
-            <img src="/src/assets/logos/python.svg" alt="Python" className={styles.skillLogo} />
+            <img src="../src/assets/logos_tech_stack/react_logo.svg" alt="Python" className={styles.skillLogo} />
             <span>Python</span>
           </div>
           <div className={styles.skillItem}>
-            <img src="/src/assets/logos/sql.svg" alt="SQL" className={styles.skillLogo} />
+            <img src="../src/assets/logos_tech_stack/react_logo.svg" alt="SQL" className={styles.skillLogo} />
+            <span>SQL</span>
+          </div>
+          <div className={styles.skillItem}>
+            <img src="../src/assets/logos_tech_stack/react_logo.svg" alt="SQL" className={styles.skillLogo} />
             <span>SQL</span>
           </div>
         </div>
@@ -51,6 +55,10 @@ const Skills: React.FC = () => {
           <div className={styles.skillItem}>
             <span className={styles.softSkillIcon}>🗣️</span>
             <span>Communication</span>
+          </div>
+          <div className={styles.skillItem}>
+            <span className={styles.softSkillIcon}>🖥️</span>
+            <span>Organization</span>
           </div>
         </div>
       </div>
