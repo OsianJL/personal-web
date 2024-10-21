@@ -12,10 +12,12 @@ const AboutMe: React.FC = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setInView(true);
+          } else {
+            setInView(false);
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.4 }
     );
 
     if (sectionRef.current) {
