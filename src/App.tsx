@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import Intro from './components/Intro'
 import AboutMe from './components/AboutMe'
 import Hero from './components/Hero'
+import Skills from './components/Skills'
 
 const App: React.FC = () => {
   const [showIntro, setShowIntro] = useState(true)
@@ -18,11 +19,14 @@ const App: React.FC = () => {
       {!showIntro && (
         <>
           <Header />
-          
-            <Hero />
-          
+
+          <Hero />
+
           <section id="about">
             <AboutMe />
+          </section>
+          <section id="skills">
+            <Skills />
           </section>
           <Footer />
         </>

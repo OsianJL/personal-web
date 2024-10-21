@@ -19,8 +19,8 @@ const Intro: React.FC<IntroProps> = ({ setShowIntro }) => {
         <img className={styles.img} src="../src/assets/logos_tech_stack/typescript_logo.svg" alt="logo typescript" />
         <img className={styles.img} src="../src/assets/logos_tech_stack/postgres_logo.svg" alt="logo postgres" />
       </div>
-      <h1 className={styles.name}>Osián Jorge Lezcano</h1>
-      <h2 className={styles.role}>Software Developer</h2>
+      <h1 className={styles.name}>Osián Jorge Lezcano </h1>
+      <h2 className={styles.role}>Software Developer..</h2>
       <button className={styles.button} onClick={handleClick}>
         Open Portfolio
       </button>

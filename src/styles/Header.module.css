@@ -33,9 +33,10 @@
 
 .link:hover {
   color: #6EE;
-  animation: hover-color linear both;
+  cursor: pointer;
+  /* animation: hover-color linear both;
   animation-timeline: scroll(root block);
-  animation-range: 0 200px; 
+  animation-range: 0 200px;  */
 }
 
 @keyframes hover-color {

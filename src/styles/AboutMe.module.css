@@ -1,9 +1,18 @@
+
 .aboutMeSection {
   background-image: linear-gradient(to bottom left, #e69, #6ee);
   padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
+  transform: rotateY(90deg);
+  transition: transform 1s, opacity 1s;
+}
+
+.aboutMeSection.inView {
+  opacity: 1;
+  transform: rotateY(0);
 }
 
 .textContent {
@@ -22,51 +31,4 @@
   margin-bottom: 1rem;
 }
 
-.skillsGridContainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-top: 3rem;
-  justify-content: space-around;
-  width: 100%;
-}
 
-.skillsCard {
-  background-color: black;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0);
-  padding: 2rem;
-  flex: 1 1 300px;
-  max-width: 400px;
-  text-align: center;
-}
-
-.skillsHeading {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-}
-
-.skillsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 1.5rem;
-  align-items: center;
-}
-
-.skillItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.skillLogo {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 0.5rem;
-}
-
-.softSkillIcon {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
