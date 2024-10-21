@@ -17,10 +17,10 @@ const App: React.FC = () => {
       {showIntro && <Intro setShowIntro={setShowIntro} />}
       {!showIntro && (
         <>
-          <section id="header">
-            <Header />
-          </section>
+          <Header />
+          
             <Hero />
+          
           <section id="about">
             <AboutMe />
           </section>
