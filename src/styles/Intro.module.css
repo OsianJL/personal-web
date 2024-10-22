@@ -26,6 +26,7 @@
   display: flex; 
   justify-content: space-evenly;
   margin-bottom: 1rem;
+  flex-wrap: nowrap; 
 }
 
 .img {
@@ -64,7 +65,6 @@
 .name {
   margin-bottom: 1rem;
   margin-top: 0;
-  font-size: 5rem;
   font-weight: bold;
   background: linear-gradient(to bottom, #6EE, #011212);
   -webkit-background-clip: text;
@@ -72,6 +72,7 @@
   -webkit-text-fill-color: transparent;
   animation: fadeIn 3s ease-out forwards;
   padding-inline: 18px;
+  text-align: center;
 }
 
 @keyframes fadeIn {
@@ -127,5 +128,20 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .name {
+    font-size: 3rem !important; 
+    margin-top: 1rem; 
+  }
+
+  .role {
+    font-size: 2rem !important; 
+  }
+
+  .img {
+    width: 2rem;
   }
 }
