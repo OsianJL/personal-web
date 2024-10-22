@@ -5,7 +5,7 @@
   text-align: center;
   align-items: center;
   margin: 0;
-  height: 3rem;
+  height: 2rem;
   position: sticky;
   top: 0;
   left: 0;
@@ -18,13 +18,11 @@
 @keyframes enhance-header {
   to {
     background-color: rgb(102, 238, 238, 0.4);
-    padding: 20px;
+    padding: 15px;
     backdrop-filter: blur(50px);
     font-size: 25px;
-    font-weight: 500;
   }
 }
-
 
 .link {
   display: inline-block;
@@ -37,25 +35,21 @@
 
 .link:hover {
   transform: scale(1.2);
-  color: #6EE;
+  color: #6ee;
   cursor: pointer;
 }
 
-
 @keyframes hover-color {
   to {
-    color: #E69; 
+    color: #e69;
     font-size: 1.7rem;
   }
 }
 
 @keyframes color-anchor {
-
-  to{
-    font-size: 1.5rem; 
-    color: black; 
+  to {
+    font-size: 1.5rem;
+    color: black;
+    text-shadow: 0.5px 0.5px black;
   }
-  
 }
-
-

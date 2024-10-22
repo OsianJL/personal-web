@@ -27,6 +27,7 @@ const AboutMe: React.FC = () => {
   }, []);
 
   return (
+    <div className={styles.backup}>
     <section
       ref={sectionRef}
       className={`${styles.aboutMeSection} ${inView ? styles.inView : ''}`}
@@ -51,6 +52,7 @@ const AboutMe: React.FC = () => {
         </p>
       </div>
     </section>
+    </div>
   );
 };
 

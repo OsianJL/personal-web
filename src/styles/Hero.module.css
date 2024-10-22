@@ -7,12 +7,20 @@
     background-image: linear-gradient(to bottom right, #6EE, #E69); 
     position: relative;
     overflow: hidden;
+    flex-wrap: wrap;
   }
   
   .overlay {
     text-align: center;
     color: white;
+    flex: 100%;
   }
+
+  @media (min-width: 768px) {
+    .overlay {
+        flex: 0 1 auto; /* Restablecer el comportamiento en pantallas más grandes */
+    }
+}
   
   .title {
     font-size: 3rem;

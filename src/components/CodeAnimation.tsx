@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useCallback, useMemo } from 'react'
+import styles from '/src/styles/CodeAnimation.module.css';  
 
 const CodeAnimation: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
@@ -30,7 +31,7 @@ const CodeAnimation: React.FC = () => {
 
   const draw = (ctx: CanvasRenderingContext2D) => {
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
-    ctx.font = '18px monospace'
+    ctx.font = '1.2rem monospace'
     ctx.fillStyle = '#6EE'
 
     // Dibujar cada línea de código escrita
@@ -92,7 +93,7 @@ const CodeAnimation: React.FC = () => {
   }, [animateCode])
 
   return (
-    <div>
+    <div className={styles.divCanvas}>
       <canvas
         ref={canvasRef}
         width="600"
