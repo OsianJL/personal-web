@@ -2,8 +2,9 @@ import React from 'react';
 import styles from '/src/styles/Projects.module.css';
 
 
-const Hero: React.FC = () => {
+const Projects: React.FC = () => {
   return (
+    
     <section className={styles.projects}>
       <h1>Projects</h1>
       <section className={styles.carrousel}>
@@ -14,7 +15,8 @@ const Hero: React.FC = () => {
  <img className={styles.img} src="https://picsum.photos/id/237/200/300" alt="" />
       </section>
     </section>
+    
   );
 };
 
-export default Hero;
+export default Projects;

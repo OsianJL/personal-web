@@ -3,7 +3,9 @@ import styles from '/src/styles/Skills.module.css';
 
 const Skills: React.FC = () => {
   return (
+    
     <section className={styles.skillsGridContainer} id='Skills'>
+      <h1>Skills</h1>
       <div className={styles.skillsCard}>
         <h2 className={styles.skillsHeading}>Technologies & Tools</h2>
         <div className={styles.skillsGrid}>
@@ -63,6 +65,7 @@ const Skills: React.FC = () => {
         </div>
       </div>
     </section>
+    
   );
 };
 
