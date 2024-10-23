@@ -1,3 +1,10 @@
 .divCanvas {
-    width: 40vw;
+    width: 40rem; 
+    margin-right: 7rem
+}
+
+@media screen and (max-width: 768px) {
+    .divCanvas {
+        width: 15rem;
+    }
 }

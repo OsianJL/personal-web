@@ -4,7 +4,9 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: #6EE; 
-    background-image: linear-gradient(to bottom right, #6EE, #E69); 
+    background-image: linear-gradient(to bottom right, rgba(110, 238, 238, 0.7), rgba(230, 105, 105, 0.7)), url(/src/assets/key_image.jpg); 
+    background-size: cover;
+    background-position: center;
     position: relative;
     overflow: hidden;
     flex-wrap: wrap;

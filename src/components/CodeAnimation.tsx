@@ -93,14 +93,15 @@ const CodeAnimation: React.FC = () => {
   }, [animateCode])
 
   return (
-    <div className={styles.divCanvas}>
+   
       <canvas
+        className={styles.divCanvas}
         ref={canvasRef}
         width="600"
         height="400"
         style={{ border: '2px solid #E69', backgroundColor: 'black' }}
       />
-    </div>
+    
   )
 }
 
