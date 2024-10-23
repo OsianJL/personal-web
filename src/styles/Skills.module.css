@@ -17,7 +17,7 @@
     margin-block: 8rem;
     background-color: black;
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0), -3px -3px 20px rgb(195, 53, 53),5px 5px 20px rgba(0, 0, 0) inset, -3px -3px 20px rgb(195, 53, 53) inset;
     padding: 2rem;
     flex: 1 1 300px;
     max-width: 400px;
