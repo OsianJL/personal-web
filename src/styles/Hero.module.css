@@ -2,62 +2,44 @@
     height: 93vh;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-content: center;
     background-color: #6EE; 
     background-image: linear-gradient(to bottom right, rgba(110, 238, 238, 0.7), rgba(230, 105, 105, 0.7)), url(/src/assets/key_image.jpg); 
     background-size: cover;
     background-position: center;
-    position: relative;
-    overflow: hidden;
     flex-wrap: wrap;
     gap: 1rem; 
   }
   
   .overlay {
-    text-align: center;
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
-    margin: auto; 
+    width: 40%;
+    max-height: 400px;
+    line-height: 0;
+    flex-wrap: wrap;
     
   }
 
-  .coding { 
-    margin: auto; 
-    width: 60%;
-  }
-
-  @media screen and (max-width: 768px) {
-    .coding {
-        width: 20%;
-    }
-}
-
-
-
+/* 
   @media (min-width: 768px) {
     .overlay {
-        flex: 0 1 auto; /* Restablecer el comportamiento en pantallas más grandes */
+        flex: 0 1 auto;
     }
-}
+} */
   
-  .title {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  }
-  
-  .subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-  }
   
   .cta {
     background-color: black;
     color: #6EE;
-    padding: 0.75rem 1.5rem;
+    padding: 1rem 1.5rem;
     border-radius: 25px;
+    width: 50%;
     text-transform: uppercase;
+    text-align: center;
     font-weight: bold;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -70,8 +52,8 @@
   }
 
   .img {
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 15rem;
     animation: crecer 2s forwards ease-in-out;
   }
 

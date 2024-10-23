@@ -1,2 +1,6 @@
 
-
+.divCanvas {
+    /* margin: auto;  */
+    width: 40%;
+    max-height: 400px;
+}

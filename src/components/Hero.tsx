@@ -5,9 +5,9 @@ import CodeAnimation from './CodeAnimation'
 const Hero: React.FC = () => {
   return (
     <section className={styles.hero}>
-      <div className={styles.coding}>
+    
         <CodeAnimation />
-      </div>
+      
       <div className={styles.overlay}>
       
         <img
@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
           alt="Picture of Osian"
         />
      
-        <h6 className={styles.subtitle}>Go ahead and snoop around! 😉</h6>
+        {/* <h6 className={styles.subtitle}>Go ahead and snoop around! 😉</h6> */}
         <a
           href="https://github.com/OsianJL"
           target="_blank"
