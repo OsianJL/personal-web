@@ -1,6 +1,7 @@
 .hero {
     height: 93vh;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-content: center;
     background-color: #6EE; 
@@ -9,6 +10,12 @@
     background-position: center;
     flex-wrap: wrap;
     gap: 1rem; 
+  }
+
+  @media (max-width: 750px) {
+    .hero {
+      flex-direction: column;
+    }
   }
   
   .overlay {
@@ -19,6 +26,7 @@
     color: white;
     width: 40%;
     max-height: 400px;
+    min-width: 300px;
     line-height: 0;
     flex-wrap: wrap;
     
