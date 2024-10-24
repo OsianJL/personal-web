@@ -1,5 +1,5 @@
 .projects {
-  height: 93vh;
+  height: 100vh;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -7,6 +7,11 @@
   background-image: linear-gradient(to top right, #6EE, #E69); 
   position: relative;
   overflow: hidden;
+}
+
+.projects h1 {
+  margin-bottom: 3rem;
+  margin-top: 3rem
 }
 
 .carrousel {

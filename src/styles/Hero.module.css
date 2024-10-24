@@ -15,6 +15,7 @@
   @media (max-width: 750px) {
     .hero {
       flex-direction: column;
+      justify-content: space-evenly;
     }
   }
   
@@ -59,7 +60,7 @@
     font-weight:900;
   }
 
-  .img {
+  .overlay .img {
     width: 15rem;
     height: 15rem;
     animation: crecer 2s forwards ease-in-out;

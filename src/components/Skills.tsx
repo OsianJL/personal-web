@@ -5,7 +5,8 @@ const Skills: React.FC = () => {
   return (
     
     <section className={styles.skillsGridContainer} id='Skills'>
-      <h1>Skills</h1>
+      <h1 className={styles.skillsHeader}>Skills</h1>
+      <div className={styles.divHeader}>
       <div className={styles.skillsCard}>
         <h2 className={styles.skillsHeading}>Technologies & Tools</h2>
         <div className={styles.skillsGrid}>
@@ -63,6 +64,7 @@ const Skills: React.FC = () => {
             <span>Organization</span>
           </div>
         </div>
+      </div>
       </div>
     </section>
     
