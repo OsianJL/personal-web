@@ -1,11 +1,11 @@
-.skillsGridContainer { 
+.skillsGridContainer {
   background-image: linear-gradient(to top left, #e69, #6ee);
   padding-top: 3rem;
- 
 }
 
 .skillsGridContainer h1 {
   text-align: center;
+  margin-top: 3rem;
 }
 
 .divHeader {
@@ -15,15 +15,12 @@
   justify-content: space-around;
   width: 100%;
   gap: 1rem;
-  
-
-
 }
 
-
 .skillsCard {
-  margin-block: 4rem;
-  margin-inline: 2rem; 
+  margin-bottom: 4rem;
+  margin-top: 1rem; 
+  margin-inline: 2rem;
   background-color: black;
   border-radius: 12px;
   box-shadow:
@@ -36,6 +33,18 @@
   max-width: 500px;
   max-height: 400px;
   text-align: center;
+  animation: spin 2s ease;
+  animation-timeline: view();
+}
+
+@keyframes spin {
+  0% {
+    transform: perspective(20px) rotateX(15deg);
+  }
+  80% {
+    
+  }
+ 
 }
 
 .skillsHeading {
@@ -67,4 +76,3 @@
   font-size: 2.15rem;
   margin-bottom: 0.5rem;
 }
-

@@ -10,15 +10,16 @@
 }
 
 .projects h1 {
-  margin-bottom: 3rem;
-  margin-top: 3rem
+  margin-bottom: 2rem;
+  margin-top: 5rem
 }
 
 .carrousel {
   display: flex; 
   margin: 0.5rem auto; 
   width: 50rem;
-  height: 430px;
+  height: 450px;
+  padding-bottom: 3rem;
 
 }
 
