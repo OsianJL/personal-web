@@ -1,0 +1,10 @@
+.experience {
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, #6EE, #E69); 
+    position: relative;
+    overflow: hidden;
+  }

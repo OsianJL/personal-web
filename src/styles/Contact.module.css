@@ -1,0 +1,10 @@
+.contact {
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to top right, #6EE, #E69); 
+    position: relative;
+    overflow: hidden;
+  }

@@ -35,6 +35,7 @@
   text-align: center;
   animation: spin 2s ease;
   animation-timeline: view();
+  animation-fill-mode: forwards;
 }
 
 @keyframes spin {
@@ -42,7 +43,7 @@
     transform: perspective(20px) rotateX(15deg);
   }
   80% {
-    
+    transform: perspective(100px) rotateX(1deg);
   }
  
 }

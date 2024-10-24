@@ -1,76 +1,101 @@
 .hero {
-    height: 93vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-    background-color: #6EE; 
-    background-image: linear-gradient(to bottom right, rgba(110, 238, 238, 0.7), rgba(230, 105, 105, 0.7)), url(/src/assets/key_image.jpg); 
-    background-size: cover;
-    background-position: center;
-    flex-wrap: wrap;
-    gap: 1rem; 
-  }
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  background-color: #6ee;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(110, 238, 238, 0.3),
+      rgba(230, 105, 105, 0.3)
+    ),
+    url(/src/assets/fireworks_image.jpg);
+  background-size: cover;
+  background-position: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 
-  @media (max-width: 750px) {
-    .hero {
-      flex-direction: column;
-      justify-content: space-evenly;
-    }
-  }
-  
-  .overlay {
-    display:flex; 
+@media (max-width: 750px) {
+  .hero {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    width: 40%;
-    max-height: 400px;
-    min-width: 300px;
-    line-height: 0;
-    flex-wrap: wrap;
-    
+    justify-content: space-evenly;
   }
+}
 
-/* 
-  @media (min-width: 768px) {
-    .overlay {
-        flex: 0 1 auto;
-    }
-} */
-  
-  
-  .cta {
-    background-color: black;
-    color: #6EE;
-    padding: 1rem 1.5rem;
-    border-radius: 25px;
-    width: 50%;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .cta:hover {
-    background-color: white;
-    color: black;
-    font-weight:900;
-  }
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 40%;
+  max-height: 400px;
+  min-width: 300px;
+  line-height: 0;
+  flex-wrap: wrap;
+}
 
-  .overlay .img {
-    width: 15rem;
-    height: 15rem;
-    animation: crecer 2s forwards ease-in-out;
-  }
 
-  @keyframes crecer {
-    0% { transform: scale(0.1); }
-    70% { transform: scale(1.3); }
-    100% { transform: scale(1); }
-  }
+.ctaGithub {
+  background-color: white;
+  color: black;
+  padding: 1rem 1.5rem;
+  margin-bottom: .2rem;
+  border-radius: 25px;
+  width: 50%;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
 
-  
-  
+.ctaGithub:hover {
+  outline: 6px solid black; 
+  color: black; 
+  font-weight: 900;
+}
+
+.ctaLinkedin {
+
+  background-color: #0077B5;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 25px;
+  width: 50%;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.ctaLinkedin:hover {
+  outline: 4px solid white; 
+  color: white; 
+  font-weight: 900;
+}
+
+.overlay .img {
+  width: 15rem;
+  height: 15rem;
+  animation: crecer 2s forwards ease-in-out;
+}
+
+@keyframes crecer {
+  0% {
+    transform: scale(0.1);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

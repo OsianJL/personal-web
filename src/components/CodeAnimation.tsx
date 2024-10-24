@@ -1,75 +1,89 @@
 import React, { useRef, useEffect, useCallback, useMemo } from 'react'
-import styles from '/src/styles/CodeAnimation.module.css';  
+import styles from '/src/styles/CodeAnimation.module.css'
 
 const CodeAnimation: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
-  const writtenCodeRef = useRef<string[]>([]) // Ref para el código escrito
-  const currentLineRef = useRef<number>(0) // Ref para la línea actual
-  const currentCharRef = useRef<number>(0) // Ref para el carácter actual
-  const animationIdRef = useRef<number | null>(null) // Ref para almacenar el ID de la animación
-  const lineHeight = 25 // Altura entre líneas
+  const writtenCodeRef = useRef<string[]>([]) 
+  const currentLineRef = useRef<number>(0) 
+  const currentCharRef = useRef<number>(0) 
+  const animationIdRef = useRef<number | null>(null) 
+  const lineHeight = 25 
   const frameCountRef = useRef<number>(0)
 
   const codeLines = useMemo(
     () => [
-        "const greeting: string = 'Hello, Recruiter!';",
-        'function sayHello(): void {',
-        '  console.log(greeting);',
-        '}',
-        'sayHello();',
-        '// Output: Hello, Recruiter!',
-        '',
-        "const fewWords: string = 'Thanks for your interest!';",
-        'function welcome(): void {',
-        '  console.log(fewWords);',
-        '}',
-        'welcome();',
-        '// Output: Thanks for your interest!',
-      ],
+      "const greeting: string = 'Hello, Recruiter!';",
+      'function sayHello(): void {',
+      '  console.log(greeting);',
+      '}',
+      'sayHello();',
+      '// Output: Hello, Recruiter!',
+      '',
+      "const fewWords: string = 'Thanks for your interest!';",
+      'function welcome(): void {',
+      '  console.log(fewWords);',
+      '}',
+      'welcome();',
+      '// Output: I know you will call me! 😉 ',
+    ],
     [],
   )
 
-  const draw = (ctx: CanvasRenderingContext2D) => {
-    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
-    ctx.font = '1.2rem monospace'
-    ctx.fillStyle = '#6EE'
-
-    // Dibujar cada línea de código escrita
-    writtenCodeRef.current.forEach((line, index) => {
-      ctx.fillText(line, 10, 50 + index * lineHeight) // Aseguramos un espacio adecuado entre líneas
-    })
+  const getWordColor = (word: string) => {
+    if (/^(const|function|void|console)$/.test(word)) {
+      return '#ee6699' 
+    } else if (/^('Hello,|Recruiter!';|'Thanks|for|your|interest!';)$/.test(word)) {
+      return '#bf23d6' 
+    } else if (/^(Hello,|Recruiter!|I|know|you|will|call|me!)$/.test(word)) {
+      return '#fdea0d' 
+    } else {
+      return '#6EE' 
+    }
   }
 
   const animateCode = useCallback(
     (ctx: CanvasRenderingContext2D) => {
+      const draw = (ctx: CanvasRenderingContext2D) => { // Moved 'draw' inside 'animateCode'
+        ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
+        ctx.font = '1.2rem monospace'
+
+        writtenCodeRef.current.forEach((line, index) => {
+          let xPosition = 10 // posición horizontal inicial
+          const words = line.split(/(\s+)/) // Dividir la línea en palabras y espacios
+
+          words.forEach((word) => {
+            ctx.fillStyle = getWordColor(word) // Establecer color según la palabra
+            ctx.fillText(word, xPosition, 50 + index * lineHeight)
+            xPosition += ctx.measureText(word).width // Mover la posición horizontal
+          })
+        })
+      }
+
       frameCountRef.current++
       if (frameCountRef.current % 8 === 0) {
         if (currentLineRef.current < codeLines.length) {
           if (
             currentCharRef.current < codeLines[currentLineRef.current].length
           ) {
-            // Añadir el siguiente carácter a la línea escrita
             const updatedLine =
               (writtenCodeRef.current[currentLineRef.current] || '') +
               codeLines[currentLineRef.current][currentCharRef.current]
             writtenCodeRef.current[currentLineRef.current] = updatedLine
             currentCharRef.current++
           } else {
-            // Terminar la línea actual e ir a la siguiente
             currentLineRef.current++
             currentCharRef.current = 0
-            writtenCodeRef.current.push('') // Añadimos una nueva línea vacía para la siguiente
+            writtenCodeRef.current.push('') 
           }
-          draw(ctx) // Actualizamos el canvas
+          draw(ctx)
         } else {
-          // Si hemos terminado todas las líneas, detener la animación
           if (animationIdRef.current) {
             cancelAnimationFrame(animationIdRef.current)
           }
         }
       }
     },
-    [codeLines],
+    [codeLines], // Removed 'draw' from the dependency array
   )
 
   useEffect(() => {
@@ -82,7 +96,6 @@ const CodeAnimation: React.FC = () => {
       animationIdRef.current = requestAnimationFrame(animate)
     }
 
-    // Iniciar la animación al cargar el componente
     animationIdRef.current = requestAnimationFrame(animate)
 
     return () => {
@@ -93,15 +106,13 @@ const CodeAnimation: React.FC = () => {
   }, [animateCode])
 
   return (
-   
-      <canvas
-        className={styles.divCanvas}
-        ref={canvasRef}
-        width="600"
-        height="400"
-        style={{ border: '2px solid #E69', backgroundColor: 'black' }}
-      />
-    
+    <canvas
+      className={styles.divCanvas}
+      ref={canvasRef}
+      width="600"
+      height="400"
+      style={{ border: '2px solid #E69', backgroundColor: 'black' }}
+    />
   )
 }
 

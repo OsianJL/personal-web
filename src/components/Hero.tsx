@@ -20,9 +20,16 @@ const Hero: React.FC = () => {
         <a
           href="https://github.com/OsianJL"
           target="_blank"
-          className={styles.cta}
+          className={styles.ctaGithub}
         >
           GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/osianjorge/"
+          target="_blank"
+          className={styles.ctaLinkedin}
+        >
+          LinkedIn
         </a>
       </div>
     </section>
