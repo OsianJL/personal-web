@@ -24,6 +24,17 @@
   }
 }
 
+.head1 {
+  position: absolute;
+  font-size: 300%;
+  color: white; 
+  text-shadow:
+    -4px -4px 0 #000, 
+    4px -4px 0 #000,
+    -4px 4px 0 #000,  
+    4px 4px 0 #000; 
+}
+
 .overlay {
   display: flex;
   flex-direction: column;

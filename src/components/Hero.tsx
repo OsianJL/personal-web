@@ -5,6 +5,7 @@ import CodeAnimation from './CodeAnimation'
 const Hero: React.FC = () => {
   return (
     <section className={styles.hero}>
+      <h1 className={styles.head1}>Congrats!! You just found Osián!!</h1>
     
         <CodeAnimation />
       
