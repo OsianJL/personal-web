@@ -16,22 +16,7 @@ const Hero: React.FC = () => {
           src="/src/assets/Osian_Avatar.png"
           alt="Picture of Osian"
         />
-     
-        {/* <h6 className={styles.subtitle}>Go ahead and snoop around! 😉</h6> */}
-        <a
-          href="https://github.com/OsianJL"
-          target="_blank"
-          className={styles.ctaGithub}
-        >
-          GitHub
-        </a>
-        <a
-          href="https://www.linkedin.com/in/osianjorge/"
-          target="_blank"
-          className={styles.ctaLinkedin}
-        >
-          LinkedIn
-        </a>
+        
       </div>
     </section>
   )

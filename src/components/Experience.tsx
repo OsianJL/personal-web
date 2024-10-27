@@ -36,6 +36,13 @@ const Experience: React.FC = () => {
   return (
     <section className={styles.experience}>
       <h1>Experience</h1>
+      <a
+          href="https://www.linkedin.com/in/osianjorge/"
+          target="_blank"
+          className={styles.ctaLinkedin}
+        >
+          LinkedIn
+        </a>
       <div className={styles.container}>
         {experiences.map((exp, index) => (
           <div className={styles.experienceItem} key={index}>

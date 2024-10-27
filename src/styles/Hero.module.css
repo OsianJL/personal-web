@@ -49,49 +49,8 @@
 }
 
 
-.ctaGithub {
-  background-color: white;
-  color: black;
-  padding: 1rem 1.5rem;
-  margin-bottom: .2rem;
-  border-radius: 25px;
-  width: 50%;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
-}
 
-.ctaGithub:hover {
-  outline: 6px solid black; 
-  color: black; 
-  font-weight: 900;
-}
 
-.ctaLinkedin {
-
-  background-color: #0077B5;
-  color: white;
-  padding: 1rem 1.5rem;
-  border-radius: 25px;
-  width: 50%;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
-}
-
-.ctaLinkedin:hover {
-  outline: 4px solid white; 
-  color: white; 
-  font-weight: 900;
-}
 
 .overlay .img {
   width: 15rem;

@@ -38,6 +38,13 @@ const Projects: React.FC = () => {
   return (
     <section className={styles.projects}>
       <h1>Projects</h1>
+      <a
+          href="https://github.com/OsianJL"
+          target="_blank"
+          className={styles.ctaGithub}
+        >
+          GitHub
+        </a>
       <section className={styles.carrousel}>
         {projects.map((project, index) => (
           <img
