@@ -1,24 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from '/src/styles/Experience.module.css';
 
 const experiences = [
   {
-    title: 'Desarrollador Frontend',
-    company: 'Empresa XYZ',
+    title: 'Full Stack Software Developer',
+    company: 'ADUX',
     city: 'Madrid',
     date: 'Enero 2020 - Presente',
     description: 'Responsable del desarrollo de interfaces de usuario...',
     responsibilities: [
       'Implementación de componentes reutilizables, optimización de rendimiento...',
-      'Colaboración con el equipo de diseño para mejorar la experiencia de usuario...',
+      'Colaboración con el equipo de diseño para mejorar la experiencia de usuario.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,..',
       // Agrega más responsabilidades aquí
     ],
   },
-  // Agrega aquí las demás experiencias (total de 6)
+  
 ];
 
 const Experience: React.FC = () => {
   const [activeModal, setActiveModal] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (activeModal !== null) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [activeModal]);
+  
 
   return (
     <section className={styles.experience}>
@@ -38,12 +51,12 @@ const Experience: React.FC = () => {
             >
               <div className={styles.modalContent}>
                 <nav className={styles.modalNav}>
+                <h1>{exp.title}</h1>
                   <button onClick={() => setActiveModal(null)}>close</button>
                 </nav>
-                <h2>{exp.title}</h2>
-                <p>
-                  <strong>Empresa:</strong> {exp.company}
-                </p>
+                <h3>Company:</h3>
+                  <h5>{exp.company}</h5> 
+                
                 <p>
                   <strong>Ciudad:</strong> {exp.city}
                 </p>
