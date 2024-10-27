@@ -3,6 +3,7 @@
   display: flex;
   text-align: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   background-image: linear-gradient(to bottom right, #6EE, #E69);
   position: relative;
@@ -19,9 +20,14 @@
  
 }
 
+.head1 {
+  margin-bottom: 2rem;
+}
+
 .experienceItem {
   position: relative;
   overflow: hidden;
+  margin: 2rem; 
 }
 
 .experienceContent {
@@ -100,6 +106,7 @@
 
 button {
   height: 3rem;
+  opacity: 1;
 }
 
 .ctaLinkedin {
@@ -111,15 +118,13 @@ button {
   width: 50%;
   text-transform: uppercase;
   text-align: center;
-  font-weight: bold;
+  font-weight: 900;
   text-decoration: none;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease; 
 }
 
 .ctaLinkedin:hover {
-  outline: 4px solid white; 
+  background-color: #0d618f;
+  box-shadow: 0 0 0 3px white;
   color: white; 
-  font-weight: 900;
 }

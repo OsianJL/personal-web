@@ -4,13 +4,13 @@
   flex-direction: row;
   justify-content: space-around;
   align-content: center;
-  background-color: black;
-  background-image: linear-gradient(
+  background-image: linear-gradient(to bottom right, #6EE, #E69);
+  /* background-image: linear-gradient(
       to bottom right,
       rgba(110, 238, 238, 0.3),
       rgba(230, 105, 105, 0.3)
     ),
-    url(/src/assets/virtual_girl.jpg);
+    url(/src/assets/hero_image.png); */
   background-size: cover;
   background-position: center;
   flex-wrap: wrap;
@@ -25,14 +25,17 @@
 }
 
 .head1 {
+  font-family:orbitron, sans-serif; 
   position: absolute;
-  font-size: 300%;
+  right: 12rem;
+  top: 10rem; 
+  font-size: 150%;
   color: white; 
   text-shadow:
-    -4px -4px 0 #000, 
-    4px -4px 0 #000,
-    -4px 4px 0 #000,  
-    4px 4px 0 #000; 
+    -1px -1px 0 #000, 
+    1px -1px 0 #000,
+    -1px 1px 0 #000,  
+    1px 1px 0 #000; 
 }
 
 .overlay {

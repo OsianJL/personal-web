@@ -1,11 +1,8 @@
-@font-face {
-  font-family: fedora;
-  src: url(/src/assets/fonts/fedora/SF\ Fedora.ttf);
-}
+
 
 
 .screen {
-  font-family:fedora, sans-serif;
+  font-family:orbitron, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;

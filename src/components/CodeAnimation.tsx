@@ -33,7 +33,7 @@ const CodeAnimation: React.FC = () => {
     if (/^(const|function|void|console)$/.test(word)) {
       return '#ee6699' 
     } else if (/^('Hello,|Recruiter!';|'Thanks|for|your|interest!';)$/.test(word)) {
-      return '#bf23d6' 
+      return '#000000' 
     } else if (/^(Hello,|Recruiter!|I|know|you|will|call|me!)$/.test(word)) {
       return '#fdea0d' 
     } else {

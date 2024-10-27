@@ -24,6 +24,9 @@ const Header: React.FC = () => {
         <li><Link smooth={true} duration={500} className={styles.link} to="experience">Experience</Link></li>
         <li><Link smooth={true} duration={500} className={styles.link} to="contact">Contact</Link></li>
       </ul>
+      <a href="tel:+34123456789">Llamar al +34 123 456 789</a>
+    <a href="https://wa.me/34123456789" target='_blank'>Enviar WhatsApp</a>
+    <a href="mailto:correo@ejemplo.com">Enviar correo</a>
     </nav>
   );
 };

@@ -15,23 +15,23 @@ const Skills: React.FC = () => {
             <span>React</span>
           </div>
           <div className={styles.skillItem}>
-            <img src="../src/assets/logos_tech_stack/react_logo.svg" alt="TypeScript" className={styles.skillLogo} />
+            <img src="../src/assets/logos_tech_stack/typescript_logo.svg" alt="TypeScript" className={styles.skillLogo} />
             <span>TypeScript</span>
           </div>
           <div className={styles.skillItem}>
-            <img src="../src/assets/logos_tech_stack/react_logo.svg" alt="Node.js" className={styles.skillLogo} />
-            <span>Node.js</span>
+            <img src="../src/assets/logos_tech_stack/css_logo.svg" alt="CSS" className={styles.skillLogo} />
+            <span>CSS</span>
           </div>
           <div className={styles.skillItem}>
-            <img src="../src/assets/logos_tech_stack/react_logo.svg" alt="Python" className={styles.skillLogo} />
+            <img src="../src/assets/logos_tech_stack/html_logo.svg" alt="html" className={styles.skillLogo} />
+            <span>HTML</span>
+          </div>
+          <div className={styles.skillItem}>
+            <img src="../src/assets/logos_tech_stack/python_logo.svg" alt="SQL" className={styles.skillLogo} />
             <span>Python</span>
           </div>
           <div className={styles.skillItem}>
-            <img src="../src/assets/logos_tech_stack/react_logo.svg" alt="SQL" className={styles.skillLogo} />
-            <span>SQL</span>
-          </div>
-          <div className={styles.skillItem}>
-            <img src="../src/assets/logos_tech_stack/react_logo.svg" alt="SQL" className={styles.skillLogo} />
+            <img src="../src/assets/logos_tech_stack/sql_logo.svg" alt="SQL" className={styles.skillLogo} />
             <span>SQL</span>
           </div>
         </div>

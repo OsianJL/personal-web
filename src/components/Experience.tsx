@@ -11,7 +11,31 @@ const experiences = [
     responsibilities: [
       'Implementación de componentes reutilizables, optimización de rendimiento...',
       'Colaboración con el equipo de diseño para mejorar la experiencia de usuario.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,..',
-      // Agrega más responsabilidades aquí
+      
+    ],
+  },
+  {
+    title: 'Full Stack Software Developer',
+    company: 'ADUX',
+    city: 'Madrid',
+    date: 'Enero 2020 - Presente',
+    description: 'Responsable del desarrollo de interfaces de usuario...',
+    responsibilities: [
+      'Implementación de componentes reutilizables, optimización de rendimiento...',
+      'Colaboración con el equipo de diseño para mejorar la experiencia de usuario.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,..',
+      
+    ],
+  },
+  {
+    title: 'Full Stack Software Developer',
+    company: 'ADUX',
+    city: 'Madrid',
+    date: 'Enero 2020 - Presente',
+    description: 'Responsable del desarrollo de interfaces de usuario...',
+    responsibilities: [
+      'Implementación de componentes reutilizables, optimización de rendimiento...',
+      'Colaboración con el equipo de diseño para mejorar la experiencia de usuario.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,..',
+      
     ],
   },
   
@@ -35,7 +59,7 @@ const Experience: React.FC = () => {
 
   return (
     <section className={styles.experience}>
-      <h1>Experience</h1>
+      <h1 className={styles.head1}>Experience</h1>
       <a
           href="https://www.linkedin.com/in/osianjorge/"
           target="_blank"

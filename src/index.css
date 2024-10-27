@@ -11,6 +11,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: orbitron;
+  src: url(/src/assets/fonts/orbitron/Orbitron-Black.ttf);
+}
+
 * {
   box-sizing: border-box;
   /* outline: 1px solid white;  */
@@ -44,13 +49,14 @@ button {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; 
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s, opacity 0.25s;
   background: linear-gradient(to bottom,#6ee, #000);
-  opacity: .5;
+  opacity: .8;
 }
 
 button:hover {
   border-color: #646cff;
+  opacity: .4;
   
 }
 button:focus,
