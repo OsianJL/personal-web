@@ -9,8 +9,8 @@
       to bottom right,
       rgba(110, 238, 238, 0.3),
       rgba(230, 105, 105, 0.3)
-    );
-    /* url(/src/assets/fireworks_image.jpg); */
+    ),
+    url(/src/assets/virtual_girl.jpg);
   background-size: cover;
   background-position: center;
   flex-wrap: wrap;
