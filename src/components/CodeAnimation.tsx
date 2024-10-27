@@ -43,18 +43,18 @@ const CodeAnimation: React.FC = () => {
 
   const animateCode = useCallback(
     (ctx: CanvasRenderingContext2D) => {
-      const draw = (ctx: CanvasRenderingContext2D) => { // Moved 'draw' inside 'animateCode'
+      const draw = (ctx: CanvasRenderingContext2D) => { 
         ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
         ctx.font = '1.2rem monospace'
 
         writtenCodeRef.current.forEach((line, index) => {
-          let xPosition = 10 // posición horizontal inicial
-          const words = line.split(/(\s+)/) // Dividir la línea en palabras y espacios
+          let xPosition = 10 
+          const words = line.split(/(\s+)/) 
 
           words.forEach((word) => {
-            ctx.fillStyle = getWordColor(word) // Establecer color según la palabra
+            ctx.fillStyle = getWordColor(word) 
             ctx.fillText(word, xPosition, 50 + index * lineHeight)
-            xPosition += ctx.measureText(word).width // Mover la posición horizontal
+            xPosition += ctx.measureText(word).width 
           })
         })
       }
@@ -83,7 +83,7 @@ const CodeAnimation: React.FC = () => {
         }
       }
     },
-    [codeLines], // Removed 'draw' from the dependency array
+    [codeLines], 
   )
 
   useEffect(() => {
@@ -111,7 +111,7 @@ const CodeAnimation: React.FC = () => {
       ref={canvasRef}
       width="600"
       height="400"
-      style={{ border: '2px solid #E69', backgroundColor: 'black' }}
+      style={{ backgroundColor: 'transparent' }}
     />
   )
 }

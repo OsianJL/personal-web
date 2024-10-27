@@ -4,13 +4,13 @@
   flex-direction: row;
   justify-content: space-around;
   align-content: center;
-  background-color: #6ee;
+  background-color: black;
   background-image: linear-gradient(
       to bottom right,
       rgba(110, 238, 238, 0.3),
       rgba(230, 105, 105, 0.3)
-    ),
-    url(/src/assets/fireworks_image.jpg);
+    );
+    /* url(/src/assets/fireworks_image.jpg); */
   background-size: cover;
   background-position: center;
   flex-wrap: wrap;
