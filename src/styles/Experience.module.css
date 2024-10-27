@@ -7,6 +7,7 @@
   background-image: linear-gradient(to bottom right, #6EE, #E69);
   position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 
 .container {
@@ -15,9 +16,7 @@
   row-gap: 70px;
   column-gap: 20px;
   padding: 20px;
-  background-image: url('/ruta/a/tu/imagen-de-fondo.jpg');
-  background-size: cover;
-  background-position: center;
+ 
 }
 
 .experienceItem {
@@ -26,10 +25,25 @@
 }
 
 .experienceContent {
-  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+  overflow: hidden;
   padding: 20px;
   border-radius: 10px;
-  transition: transform 0.3s;
+
+}
+
+.experienceContent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/src/assets/experience-images/marketing.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(9px); 
+  z-index: -1;
 }
 
 .experienceContent h3 {
@@ -38,11 +52,7 @@
 }
 
 .experienceContent p {
-  margin: 5px 0 0;
-}
-
-.experienceItem:hover .experienceContent {
-  transform: scale(1.05);
+  margin: 15px 0 25px;
 }
 
 .modal {
@@ -63,7 +73,7 @@
 }
 
 .modalContent {
-  max-width: 80%;
+  max-width: 90%;
   background: #222;
   padding: 30px;
   border-radius: 10px;
@@ -78,13 +88,12 @@
   margin: 10px 0;
 }
 
-.experienceItem:hover .modal,
-.modal:hover {
+.modalVisible {
   opacity: 1;
   visibility: visible;
 }
 
-.nav {
+.modalNav {
   display: flex; 
   justify-content: flex-end;
 }

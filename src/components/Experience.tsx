@@ -1,5 +1,5 @@
-import React from 'react'
-import styles from '/src/styles/Experience.module.css'
+import React, { useState } from 'react';
+import styles from '/src/styles/Experience.module.css';
 
 const experiences = [
   {
@@ -8,72 +8,37 @@ const experiences = [
     city: 'Madrid',
     date: 'Enero 2020 - Presente',
     description: 'Responsable del desarrollo de interfaces de usuario...',
-    responsibilities:
+    responsibilities: [
       'Implementación de componentes reutilizables, optimización de rendimiento...',
-  },
-  {
-    title: 'Desarrollador Frontend',
-    company: 'Empresa XYZ',
-    city: 'Madrid',
-    date: 'Enero 2020 - Presente',
-    description: 'Responsable del desarrollo de interfaces de usuario...',
-    responsibilities:
-      'Implementación de componentes reutilizables, optimización de rendimiento Implementación de componentes reutilizables, optimización de rendimientoImplementación de componentes reutilizables, optimización de rendimientoImplementación de componentes reutilizables, optimización de rendimientoImplementación de componentes reutilizables, optimización de rendimientoImplementación de componentes reutilizables, optimización de rendimientoImplementación de componentes reutilizables, optimización de rendimientoImplementación de componentes reutilizables, optimización de rendimientoImplementación de componentes reutilizables, optimización de rendimientoImplementación de componentes reutilizables, optimización de rendimientoImplementación de componentes reutilizables, optimización de rendimientoImplementación de componentes reutilizables, optimización de rendimientoImplementación de componentes reutilizables, optimización de rendimientoImplementación de componentes reutilizables, optimización de rendimientoImplementación de componentes reutilizables, optimización de rendimientoImplementación de componentes reutilizables, optimización de rendimientoImplementación de componentes reutilizables, optimización de rendimientoImplementación de componentes reutilizables, optimización de rendimientoImplementación de componentes reutilizables, optimización de rendimientoImplementación de componentes reutilizables, optimización de rendimiento...',
-  },
-  {
-    title: 'Desarrollador Frontend',
-    company: 'Empresa XYZ',
-    city: 'Madrid',
-    date: 'Enero 2020 - Presente',
-    description: 'Responsable del desarrollo de interfaces de usuario...',
-    responsibilities:
-      'Implementación de componentes reutilizables, optimización de rendimiento...',
-  },
-  {
-    title: 'Desarrollador Frontend',
-    company: 'Empresa XYZ',
-    city: 'Madrid',
-    date: 'Enero 2020 - Presente',
-    description: 'Responsable del desarrollo de interfaces de usuario...',
-    responsibilities:
-      'Implementación de componentes reutilizables, optimización de rendimiento...',
-  },
-  {
-    title: 'Desarrollador Frontend',
-    company: 'Empresa XYZ',
-    city: 'Madrid',
-    date: 'Enero 2020 - Presente',
-    description: 'Responsable del desarrollo de interfaces de usuario...',
-    responsibilities:
-      'Implementación de componentes reutilizables, optimización de rendimiento...',
-  },
-  {
-    title: 'Desarrollador Frontend',
-    company: 'Empresa XYZ',
-    city: 'Madrid',
-    date: 'Enero 2020 - Presente',
-    description: 'Responsable del desarrollo de interfaces de usuario...',
-    responsibilities:
-      'Implementación de componentes reutilizables, optimización de rendimiento...',
+      'Colaboración con el equipo de diseño para mejorar la experiencia de usuario...',
+      // Agrega más responsabilidades aquí
+    ],
   },
   // Agrega aquí las demás experiencias (total de 6)
-]
+];
 
 const Experience: React.FC = () => {
+  const [activeModal, setActiveModal] = useState<number | null>(null);
+
   return (
     <section className={styles.experience}>
+      <h1>Experience</h1>
       <div className={styles.container}>
         {experiences.map((exp, index) => (
           <div className={styles.experienceItem} key={index}>
             <div className={styles.experienceContent}>
               <h3>{exp.title}</h3>
               <p>{exp.company}</p>
-              <button>see more</button>
+              <button onClick={() => setActiveModal(index)}>see more</button>
             </div>
-            <div className={styles.modal}>
+            <div
+              className={`${styles.modal} ${
+                activeModal === index ? styles.modalVisible : ''
+              }`}
+            >
               <div className={styles.modalContent}>
-                <nav className={styles.nav}>
-                  <button>close</button>
+                <nav className={styles.modalNav}>
+                  <button onClick={() => setActiveModal(null)}>close</button>
                 </nav>
                 <h2>{exp.title}</h2>
                 <p>
@@ -89,15 +54,20 @@ const Experience: React.FC = () => {
                   <strong>Descripción:</strong> {exp.description}
                 </p>
                 <p>
-                  <strong>Responsabilidades:</strong> {exp.responsibilities}
+                  <strong>Responsabilidades:</strong>
                 </p>
+                <ul>
+                  {exp.responsibilities.map((resp, index) => (
+                    <li key={index}>{resp}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;
