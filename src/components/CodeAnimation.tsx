@@ -111,7 +111,7 @@ const CodeAnimation: React.FC = () => {
       ref={canvasRef}
       width="600"
       height="400"
-      style={{ backgroundColor: 'transparent' }}
+      style={{ backgroundColor: 'black', borderWidth: '20px', borderStyle: 'solid', borderColor: 'orange'  }}
     />
   )
 }

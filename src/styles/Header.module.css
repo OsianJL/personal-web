@@ -1,7 +1,7 @@
 .header {
   display: flex;
   padding: 20px;
-  justify-content: flex-start;
+  justify-content: space-between;
   text-align: center;
   align-items: center;
   margin: 0;
@@ -19,8 +19,7 @@
   to {
     background-color: rgb(102, 238, 238, 0.4);
     padding: 25px;
-    backdrop-filter: blur(50px);
-    font-size: 25px;
+    backdrop-filter: blur(50px)
   }
 }
 
@@ -50,7 +49,7 @@
 
 .link {
   display: inline-block;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   transition: transform 200ms ease;
   animation: color-anchor linear both;
   animation-timeline: scroll(root block);
@@ -79,7 +78,7 @@
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .menuToggle {
     display: flex;
   }
@@ -118,3 +117,17 @@
     font-size: 1rem;
   }
 }
+
+.contact {
+  margin-inline: 2rem; 
+  display: flex;
+  justify-content: space-evenly;
+  gap:1rem;
+  flex-shrink: 1; 
+}
+
+.anchor {
+  font-size: .8rem;
+}
+
+
