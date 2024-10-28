@@ -1,6 +1,10 @@
 
 .divCanvas {
-    width: 50%; 
+    position: absolute;
+    left: 50%; 
+    top: 47%; 
+    translate: -50% -50%;
+    width: 65%; 
     min-width: 300px;
-    max-height: 400px;
+    max-height: 550px;
 }

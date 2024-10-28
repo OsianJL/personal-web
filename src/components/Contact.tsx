@@ -12,8 +12,16 @@ const Contact: React.FC = () => {
         <input type="text" id="name" name="name" required />
       </div>
       <div className={styles.formGroup}>
+        <label htmlFor="name">Phone:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div className={styles.formGroup}>
         <label htmlFor="email">Email:</label>
         <input type="email" id="email" name="email" required />
+      </div>
+      <div className={styles.formGroup}>
+        <label htmlFor="concept">Concept:</label>
+        <input type="text" id="name" name="name" required />
       </div>
       <div className={styles.formGroup}>
         <label htmlFor="message">Message:</label>
