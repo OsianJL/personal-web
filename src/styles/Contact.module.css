@@ -1,11 +1,66 @@
 .contact {
-    height: 100vh;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    background-image: linear-gradient(to top right, #6EE, #E69); 
-    position: relative;
-    overflow: hidden;
-  
-  }
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(to top right, #6EE, #E69); 
+  position: relative;
+  overflow: hidden;
+}
+
+.contact h1 {
+  margin-bottom: 1rem;
+}
+
+.contactForm {
+  width: min(80%, 700px);
+  margin: auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formGroup {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.formGroup label {
+  flex: 1;
+  text-align: right;
+  margin-right: 1rem;
+  color: black; 
+  font-weight: bold;
+}
+
+.formGroup input,
+.formGroup textarea {
+  flex: 2;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  min-height: 36px;
+  width: 250px;
+}
+
+.contactForm button {
+  width: 10rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #6EE;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contactForm button:hover {
+  background-color: #5DD;
+  opacity: 1;
+  outline: 2px solid white;
+}
