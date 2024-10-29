@@ -10,12 +10,12 @@
 }
 
 .contact h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .contactForm {
   width: min(80%, 700px);
-  margin: auto; 
+  margin-inline: auto; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +30,7 @@
 
 .formGroup label {
   flex: 1;
-  text-align: right;
+  text-align: center;
   margin-right: 1rem;
   color: black; 
   font-weight: bold;
@@ -45,8 +45,10 @@
 }
 
 textarea {
-  min-height: 36px;
+  resize: none;
+  height: 150px;
   width: 250px;
+
 }
 
 .contactForm button {

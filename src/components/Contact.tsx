@@ -7,24 +7,19 @@ const Contact: React.FC = () => {
       <h1>Contact</h1>
       <form className={styles.contactForm}>
         <div className={styles.formGroup}>
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+          <input type="text" id="name" name="name" placeholder='Name' required />
         </div>
         <div className={styles.formGroup}>
-          <label htmlFor="phone">Phone:</label>
-          <input type="text" id="phone" name="phone" required />
+          <input type="text" id="phone" name="phone" placeholder='Phone' required />
         </div>
         <div className={styles.formGroup}>
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" name="email" placeholder='Email' required />
         </div>
         <div className={styles.formGroup}>
-          <label htmlFor="concept">Concept:</label>
-          <input type="text" id="concept" name="concept" required />
+          <input type="text" id="concept" name="concept" placeholder='Concept' required />
         </div>
         <div className={styles.formGroup}>
-          <label htmlFor="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
+          <textarea id="message" name="message" placeholder='Your message here...' required></textarea>
         </div>
         <button type="submit">Send</button>
       </form>

@@ -17,34 +17,6 @@ const experiences = [
           'Colaboración con el equipo de diseño para mejorar la experiencia de usuario.,,,',
         ],
       },
-    {
-        title: 'Full Stack Software Developer',
-        company: 'Bubbo',
-        city: 'Zaragoza (Remote)',
-        date: 'June 2024 - Present',
-        description: 'Responsable del desarrollo de interfaces de usuario...',
-        responsibilities: [
-          'Implementación de componentes reutilizables, optimización de rendimiento...',
-          'Colaboración con el equipo de diseño para mejorar la experiencia de usuario.,,,',
-          'Colaboración con el equipo de diseño para mejorar la experiencia de usuario.,,,',
-          'Colaboración con el equipo de diseño para mejorar la experiencia de usuario.,,,',
-          'Colaboración con el equipo de diseño para mejorar la experiencia de usuario.,,,',
-        ],
-      },
-    {
-        title: 'Full Stack Software Developer',
-        company: 'Bubbo',
-        city: 'Zaragoza (Remote)',
-        date: 'June 2024 - Present',
-        description: 'Responsable del desarrollo de interfaces de usuario...',
-        responsibilities: [
-          'Implementación de componentes reutilizables, optimización de rendimiento...',
-          'Colaboración con el equipo de diseño para mejorar la experiencia de usuario.,,,',
-          'Colaboración con el equipo de diseño para mejorar la experiencia de usuario.,,,',
-          'Colaboración con el equipo de diseño para mejorar la experiencia de usuario.,,,',
-          'Colaboración con el equipo de diseño para mejorar la experiencia de usuario.,,,',
-        ],
-      },
 ];
 
 const Experience: React.FC = () => {
@@ -79,7 +51,7 @@ const Experience: React.FC = () => {
               <h3>{exp.title}</h3>
               <p>{exp.company}</p>
               <Link
-                to="experience"
+                to={`modal-${index}`}
                 smooth={true}
                 duration={500}
                 className={styles.link}

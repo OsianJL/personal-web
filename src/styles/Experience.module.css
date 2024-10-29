@@ -105,11 +105,9 @@
   justify-content: space-between;
 }
 
-button {
-  height: 3rem;
-  opacity: 1;
-  align-self:center;
-}
+/* .closeLink {
+  font-size: 5rem !important;
+} */
 
 .ctaLinkedin {
 
